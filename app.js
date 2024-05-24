@@ -223,3 +223,13 @@ const products = [
         brand: "Bosch"
     }
 ];
+
+
+
+const div = document.querySelector('div');
+for (let i = 0 ; i < products.length ; i++){
+
+    div.innerHTML += `<h2> Brand: ${products[i].brand}  </h2>`
+
+}
+
