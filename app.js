@@ -225,15 +225,11 @@ const products = [
 ];
 
 
-
-const div = document.querySelector('div');
-
-
-
-const Electronics = products.filter(item =>{
-   return item.category === 'Electronics';
+const filtereditems = (btn) =>{
+    console.log(btn.innerHTML);
+const filtered = products.filter(item =>{
+    return item.category === btn.innerHTML
 })
-
-console.log(Electronics);
-
+console.log(filtered);
+}
 
