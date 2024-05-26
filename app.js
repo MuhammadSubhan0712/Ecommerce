@@ -281,7 +281,7 @@ const renderall = ()=>{
       <h5 class="card-title">Product Name: ${item.brand} ${item.name}</h5>
       <h6 class="card-title">Category: ${item.category} </h6>
       <p class="card-text">Price: ${item.price}</p>
-      <a href="#" class="btn btn-primary">Add to Cart</a>
+      <a href="#" id="card-btn" class="btn btn-primary">Add to Cart</a>
     </div>
   </div>
     `
