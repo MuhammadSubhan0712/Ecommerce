@@ -232,6 +232,7 @@ products.map((item) =>{
     <h1> Product Name: ${item.brand} ${item.name}  </h1>
     <h1> Category: ${item.category}  </h1>
     <h1> Price: ${item.price}  </h1>
+    <hr/>
     `
 })
 
