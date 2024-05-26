@@ -229,19 +229,34 @@ const div = document.querySelector('#card');
 const filtereditems = (btn) =>{
     div.innerHTML = '';
     console.log(btn.innerHTML);
-const filtered = products.filter(item => item.category === btn.
-innerHTML).map(item =>{
+const filtered = products.filter(item => item.category === btn.innerHTML).map(item =>{
 div.innerHTML +=
 ` 
-<div class="card" style="width: 18rem;">
-  <h2 class="card-title"><b>Product: ${item.brand} ${item.name}<b></h2>
-    <h3 class="card-subtitle mb-2 text-body-secondary"><b>Category: ${item.category}<b></h3>
-    <p class="card-text">Price: ${item.price}</p>
-    <button class = "btn btn-primary" > Add to Cart <button/>
-  </div>
-  </div>
+<h1>Product Name: ${item.brand} ${item.name}</h1>
+<h1> Category: ${item.category} </h1>
+<h1>Price: ${item.price}</h1>
+</hr>
 `
 })
 console.log(filtered);
 }
 
+
+// const elec = products.filter(item =>{
+//     return item.category === 'Electronics' && item.price > 100
+// } ).filter((item) =>{
+//     return item.price < 200
+// }
+// )
+
+
+// const elec  = products.filter(item => item.category === 
+// 'Electronics').filter(item => item.price > 100).filter(item => item.price < 200 )
+// console.log(elec);
+
+
+
+
+// products.map((item) =>{
+//     console.log(item.category);
+// } )
