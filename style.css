@@ -4,12 +4,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Comic Neue", cursive;
+  font-weight: 400;
+  font-style: large;
 }
-.comic-neue-regular {
-    font-family: "Comic Neue", cursive;
-    font-weight: 400;
-    font-style: normal;
-  }
+
 .background {
   background-image: url("./images/360_F_655482254_1k1yrQACCvforJsBqcLgQgJAuoPSzg3X.jpg");
   background-size: cover;
