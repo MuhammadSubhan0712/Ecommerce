@@ -226,20 +226,22 @@ const products = [
 
 const div = document.querySelector('#card');
 
-const filtereditems = (btn) =>{
-    div.innerHTML = '';
-    console.log(btn.innerHTML);
-const filtered = products.filter(item => item.category === btn.innerHTML).map(item =>{
-div.innerHTML +=
-` 
-<h1>Product Name: ${item.brand} ${item.name}</h1>
-<h1> Category: ${item.category} </h1>
-<h1>Price: ${item.price}</h1>
-</hr>
-`
-})
-console.log(filtered);
-}
+
+
+// const filtereditems = (btn) =>{
+//     div.innerHTML = '';
+//     console.log(btn.innerHTML);
+// const filtered = products.filter(item => item.category === btn.innerHTML).map(item =>{
+// div.innerHTML +=
+// ` 
+// <h1>Product Name: ${item.brand} ${item.name}</h1>
+// <h1> Category: ${item.category} </h1>
+// <h1>Price: ${item.price}</h1>
+// </hr>
+// `
+// })
+// console.log(filtered);
+// }
 
 
 // const elec = products.filter(item =>{
