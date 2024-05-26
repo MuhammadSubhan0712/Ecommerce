@@ -9,16 +9,9 @@
   font-style: normal;
   font-size: large;
 }
-
-.background {
-  background-image: url("./images/360_F_655482254_1k1yrQACCvforJsBqcLgQgJAuoPSzg3X.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 100%;
-  height: 100vh;
+body{
+    background-color: gray;
 }
-
 .navbar {
   background-color: rgb(163, 108, 7);
 }
