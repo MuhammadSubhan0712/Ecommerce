@@ -144,7 +144,7 @@ const products = [
         price: 14.99,
         category: "Stationery",
         brand: "Erin Condren",
-        img:"https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjS5kVz2dFKc8SiZ8ipM1tUlI3rKj2-oZhi24X5_gJFP5LzE-iQRFjL_VsQ0XOeVeYpO8QuwQ_1JiqIrMOAGS_LSJHEYqemuc93uLxwWjMZRHlFnoq40g_pAMEkME5Afm2CFNgNxDHEaQg/w1200-h630-p-k-no-nu/fullsizeoutput_5bc.jpeg"
+        img:"https://i.pinimg.com/originals/8a/cf/25/8acf259c74ca99d28c326578da88677d.jpg"
     },
 
     // Furniture
@@ -218,7 +218,7 @@ const products = [
         price: 299.99,
         category: "Fitness",
         brand: "Peloton",
-        img:"https://images.ctfassets.net/7vk8puwnesgc/Mzauaq49rPFTogo0fmP9t/57b05d1e6c9094bf1d84cdca3f32b84f/meta-data-bike.jpg"
+        img:"https://cdn.mos.cms.futurecdn.net/fJwGGzqcCeSxjRQ47JPrV4-1200-80.jpg"
     },
 
     // Kitchen Appliances
@@ -248,7 +248,7 @@ const products = [
         price: 799.99,
         category: "Kitchen Appliances",
         brand: "Whirlpool",
-        img:"https://m.media-amazon.com/images/I/51Uy6-LWNfL._AC_UF1000,1000_QL80_.jpg"
+        img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnK8_WCe4LGe_uShiVLWZLK1_V531C4IOR4g&usqp=CAU"
     },
     {
         name: "Dishwasher",
@@ -259,10 +259,21 @@ const products = [
     }
 ];
 
+
+
+
+
+
+
+
 const div = document.querySelector('#card');
 
 
-products.map((item) =>{
+// There I render all the following Items using "MAP()" method
+
+const renderall = ()=>{
+    div.innerHTML = "";  
+    products.map((item) =>{
     div.innerHTML += `
     <div class="card bg-dark text-white" style="width: 18rem;">
     <img src="${item.img}" class="card-img-top" alt="image">
@@ -275,6 +286,15 @@ products.map((item) =>{
   </div>
     `
 })
+}
+renderall();
+
+
+
+
+
+// There I render only the following Items which user selected using "filter()" method
+
 
 const filtereditems = (btn) =>{
     div.innerHTML = '';
@@ -283,6 +303,7 @@ const filtered = products.filter(item => item.category === btn.innerHTML).map(it
 div.innerHTML +=
 `
 <div class="card bg-dark text-white" style="width: 18rem;">
+<img src="${item.img}" class="card-img-top" alt="image">
 <div class="card-body">
   <h5 class="card-title">Product Name: ${item.brand} ${item.name}</h5>
   <h6 class="card-title">Category: ${item.category} </h6>
@@ -295,22 +316,3 @@ div.innerHTML +=
 console.log(filtered);
 }
 
-
-// const elec = products.filter(item =>{
-//     return item.category === 'Electronics' && item.price > 100
-// } ).filter((item) =>{
-//     return item.price < 200
-// }
-// )
-
-
-// const elec  = products.filter(item => item.category === 
-// 'Electronics').filter(item => item.price > 100).filter(item => item.price < 200 )
-// console.log(elec);
-
-
-
-
-// products.map((item) =>{
-//     console.log(item.category);
-// } )
