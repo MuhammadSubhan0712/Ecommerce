@@ -227,6 +227,13 @@ const products = [
 const div = document.querySelector('#card');
 
 
+products.map((item) =>{
+    div.innerHTML += `
+    <h1> Product Name: ${item.brand} ${item.name}  </h1>
+    <h1> Category: ${item.category}  </h1>
+    <h1> Price: ${item.price}  </h1>
+    `
+})
 
 // const filtereditems = (btn) =>{
 //     div.innerHTML = '';
