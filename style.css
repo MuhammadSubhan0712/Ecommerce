@@ -9,8 +9,12 @@
   font-style: normal;
   font-size: large;
 }
-body{
-    background-color: gray;
+#body{
+    background: linear-gradient(to bottom, grey, goldenrod);
+}
+
+.card-img-top{
+    
 }
 .navbar {
   background-color: rgb(163, 108, 7);
