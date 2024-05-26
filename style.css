@@ -4,7 +4,11 @@
     box-sizing: border-box;
 }
 
-.bg-image{
+.background {
+    background-image: url('./images/composition-black-friday-shopping-cart-with-copy-space_23-2148667046.jpg'); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
     width: 100%;
-    height: 100%;
+    height: 100vh; 
 }

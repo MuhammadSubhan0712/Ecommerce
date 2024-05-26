@@ -231,5 +231,6 @@ const filtered = products.filter(item =>{
     return item.category === btn.innerHTML
 })
 console.log(filtered);
+
 }
 
