@@ -234,8 +234,8 @@ innerHTML).map(item =>{
 div.innerHTML +=
 ` 
 <div class="card" style="width: 18rem;">
-  <h2 class="card-title">Product: ${item.brand} ${item.name}</h2>
-    <h3 class="card-subtitle mb-2 text-body-secondary">Category: ${item.category}</h3>
+  <h2 class="card-title"><b>Product: ${item.brand} ${item.name}<b></h2>
+    <h3 class="card-subtitle mb-2 text-body-secondary"><b>Category: ${item.category}<b></h3>
     <p class="card-text">Price: ${item.price}</p>
     <button class = "btn btn-primary" > Add to Cart <button/>
   </div>
