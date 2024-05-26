@@ -224,7 +224,7 @@ const products = [
     }
 ];
 
-div = document.querySelector('.card-body');
+div = document.querySelector('.card');
 
 const filtereditems = (btn) =>{
     div.innerHTML = '';
@@ -232,19 +232,15 @@ const filtereditems = (btn) =>{
 const filtered = products.filter(item => item.category === btn.
 innerHTML).map(item =>{
 div.innerHTML +=
-` 
-    <h2 class="card-title">Product: ${item.brand} ${item.name}</h2>
+`  
+<div class="card" style="width: 18rem;">
+  <h2 class="card-title">Product: ${item.brand} ${item.name}</h2>
     <h3 class="card-subtitle mb-2 text-body-secondary">Category: ${item.category}</h3>
     <p class="card-text">Price: ${item.price}</p>
     <button class = "btn btn-primary" > Add to Cart <button/>
   </div>
+  </div>
 `
 })
-{
-
-}
-
-console.log(filtered);
-
 }
 
