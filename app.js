@@ -224,12 +224,26 @@ const products = [
     }
 ];
 
+div = document.querySelector('.card-body');
 
 const filtereditems = (btn) =>{
+    div.innerHTML = '';
     console.log(btn.innerHTML);
-const filtered = products.filter(item =>{
-    return item.category === btn.innerHTML
+const filtered = products.filter(item => item.category === btn.
+innerHTML).map(item =>{
+div.innerHTML +=
+` 
+    <h2 class="card-title">Product: ${item.brand} ${item.name}</h2>
+    <h3 class="card-subtitle mb-2 text-body-secondary">Category: ${item.category}</h3>
+    <p class="card-text">Price: ${item.price}</p>
+    <button class = "btn btn-primary" > Add to Cart <button/>
+  </div>
+`
 })
+{
+
+}
+
 console.log(filtered);
 
 }
