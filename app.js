@@ -224,11 +224,10 @@ const products = [
     }
 ];
 
-div = document.querySelector('#card');
+const div = document.querySelector('#card');
 
 const filtereditems = (btn) =>{
     div.innerHTML = '';
-    console.log(btn.innerHTML);
 const filtered = products.filter(item => item.category === btn.
 innerHTML).map(item =>{
 div.innerHTML +=
@@ -242,5 +241,6 @@ div.innerHTML +=
   </div>
 `
 })
+console.log(filtered);
 }
 
