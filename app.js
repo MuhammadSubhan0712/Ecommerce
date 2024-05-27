@@ -271,7 +271,7 @@ const div = document.querySelector('#card');
 
 // There I render all the following Items using "MAP()" method
 
-const renderall = ()=>{
+const renderall = (btn)=>{
     div.innerHTML = "";  
     products.map((item) =>{
     div.innerHTML += `
@@ -279,7 +279,7 @@ const renderall = ()=>{
     <img src="${item.img}" class="card-img-top" alt="image">
     <div class="card-body">
       <h5 class="card-title">Product Name: ${item.brand} ${item.name}</h5>
-      <h6 class="card-title">Category: ${item.category} </h6>
+      <h5 class="card-title">Category: ${item.category} </h5>
       <p class="card-text">Price: ${item.price}</p>
       <a href="#" id="card-btn" class="btn btn-primary">Add to Cart</a>
     </div>
@@ -296,22 +296,22 @@ renderall();
 
 let filtereditems = (btn)=>{
     div.innerHTML = ''
-console.log(btn);
+console.log(btn.innerHTML);
 let filtered = products.filter((item) =>{
-    return item.category === btn.innerHTML
+    return item.category === 'Stationery'
 }).map((item) =>{
     div.innerHTML += `
     <div class="card bg-dark text-white" style="width: 18rem;">
     <img src="${item.img}" class="card-img-top" alt="image">
     <div class="card-body">
       <h5 class="card-title">Product Name: ${item.brand} ${item.name}</h5>
-      <h6 class="card-title">Category: ${item.category} </h6>
+      <h5 class="card-title">Category: ${item.category} </h5>
       <p class="card-text">Price: ${item.price}</p>
       <a href="#" id="card-btn" class="btn btn-primary">Add to Cart</a>
     </div>
   </div>`
 })
-}
 console.log(filtered);
+}
 
 
