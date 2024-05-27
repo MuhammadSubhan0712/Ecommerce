@@ -278,9 +278,9 @@ const renderall = (btn)=>{
     <div class="card bg-dark text-white" style="width: 18rem;">
     <img src="${item.img}" class="card-img-top" alt="image">
     <div class="card-body">
-      <h5 class="card-title">Product Name: ${item.brand} ${item.name}</h5>
-      <h5 class="card-title">Category: ${item.category} </h5>
-      <p class="card-text">Price: ${item.price}</p>
+      <h5 class="card-title">${item.brand} ${item.name}</h5>
+      <h5 class="card-title"> ${item.category} </h5>
+      <p class="card-text">Price: ${item.price}$</p>
       <a href="#" id="card-btn" class="btn btn-primary">Add to Cart</a>
     </div>
   </div> `
@@ -298,15 +298,15 @@ let filtereditems = (btn)=>{
     div.innerHTML = ''
 console.log(btn.innerHTML);
 let filtered = products.filter((item) =>{
-    return item.category === 'Stationery'
+    return item.category === btn.innerHTML
 }).map((item) =>{
     div.innerHTML += `
     <div class="card bg-dark text-white" style="width: 18rem;">
     <img src="${item.img}" class="card-img-top" alt="image">
     <div class="card-body">
-      <h5 class="card-title">Product Name: ${item.brand} ${item.name}</h5>
-      <h5 class="card-title">Category: ${item.category} </h5>
-      <p class="card-text">Price: ${item.price}</p>
+      <h5 class="card-title">${item.brand} ${item.name}</h5>
+      <h5 class="card-title">${item.category} </h5>
+      <p class="card-text">Price: ${item.price}$</p>
       <a href="#" id="card-btn" class="btn btn-primary">Add to Cart</a>
     </div>
   </div>`
