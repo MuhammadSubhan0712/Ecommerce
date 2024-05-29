@@ -11,35 +11,41 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous" />
   </head>
-<body id="body" >
-   
-<nav class="navbar">
-    <div class="container-fluid d-flex justify-center">
-      <span id="span" class=" navbar-brand mb-0 h1 fw-bold border border-5 border border-warning rounded-bottom-1 ">LELOoOoOo</span>
+  <body id="body">
+    <nav class="navbar">
+      <div class="container-fluid d-flex justify-center">
+        <span
+          id="span"
+          class="navbar-brand mb-0 h1 fw-bold border border-5 border border-warning rounded-bottom-1"
+          >LELOoOoOo</span
+        >
+        <!-- Button to render all products -->
+        <button onclick="renderall()">All Items</button>
 
-      <button  onclick="renderall()"> All Items </button>
-  
-        <button  onclick="filtereditems('Electronics')">Electronics </button>
-  
-        <button onclick="filtereditems('Footwear')">Footwear </button>
-  
-        <button onclick="filtereditems('Home Appliances')"> Home Appliances </button>
+        <!-- Now there typewise products rendered -->
+        <button onclick="filtereditems('Electronics')">Electronics</button>
 
-        <button onclick="filtereditems('Stationery')"> Stationery </button>
-  
-        <button onclick="filtereditems('Furniture')"> Furniture </button>
-  
-        <button onclick="filtereditems('Fitness')"> Fitness </button>
-  
-        <button onclick="filtereditems('Kitchen Appliances')"> Kitchen Appliances </button>
-  
+        <button onclick="filtereditems('Footwear')">Footwear</button>
 
-    </div>
-  </nav>
+        <button onclick="filtereditems('Home Appliances')">
+          Home Appliances
+        </button>
 
- <div id="card" class="mt-5 d-flex justify-content-center gap-5 flex-wrap">
+        <button onclick="filtereditems('Stationery')">Stationery</button>
 
- </div>
+        <button onclick="filtereditems('Furniture')">Furniture</button>
+
+        <button onclick="filtereditems('Fitness')">Fitness</button>
+
+        <button onclick="filtereditems('Kitchen Appliances')">
+          Kitchen Appliances
+        </button>
+      </div>
+    </nav>
+
+    <div
+      id="card"
+      class="mt-5 d-flex justify-content-center gap-5 flex-wrap"></div>
     <script src="app.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

@@ -5,27 +5,27 @@
   padding: 0;
   box-sizing: border-box;
 }
-#body{
-    font-family: "Comic Neue";
-    font-weight: bold;
-    font-style: normal;
-    font-size: 22px;
-    background: linear-gradient(to bottom, grey, goldenrod);
+#body {
+  font-family: "Comic Neue";
+  font-weight: bold;
+  font-style: normal;
+  font-size: 22px;
+  background: linear-gradient(to bottom, grey, goldenrod);
 }
 
-.card-img-top{
-    width: 50%;
-    height: 30vh;
+.card-img-top {
+  width: 50%;
+  height: 30vh;
 }
 .navbar {
   background-color: rgb(163, 108, 7);
 }
 
-#span{
-    color: rgb(89, 43, 255);
-    background-color: rgb(193, 255, 94);
-    border-radius: 7px;
-    font-size: 30px;
+#span {
+  color: rgb(89, 43, 255);
+  background-color: rgb(193, 255, 94);
+  border-radius: 7px;
+  font-size: 30px;
 }
 button {
   background-color: rgb(163, 108, 7);
@@ -44,15 +44,14 @@ button:active {
   background-color: darkred;
 }
 
-
-#card-btn{
-    background-color: rgb(3, 3, 116);
-    color: rgb(252, 252, 252);
-    transition: 0.2s ease-in-out;
+#card-btn {
+  background-color: rgb(3, 3, 116);
+  color: rgb(252, 252, 252);
+  transition: 0.2s ease-in-out;
 }
 
-#card-btn:hover{
-    cursor: pointer;
-    color: rgb(0, 255, 21);
-    transition: 0.2s ease-in-out;
+#card-btn:hover {
+  cursor: pointer;
+  color: rgb(0, 255, 21);
+  transition: 0.2s ease-in-out;
 }
