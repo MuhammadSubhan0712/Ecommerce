@@ -271,7 +271,7 @@ const div = document.querySelector('#card');
 
 // There I render all the following Items using "MAP()" method
 
-const renderall = (btn)=>{
+let renderall = ()=>{
     div.innerHTML = "";  
     products.map((item) =>{
     div.innerHTML += `
@@ -280,7 +280,7 @@ const renderall = (btn)=>{
     <div class="card-body">
       <h5 class="card-title">${item.brand} ${item.name}</h5>
       <h5 class="card-title"> ${item.category} </h5>
-      <p class="card-text">Price: ${item.price}$</p>
+      <p class="card-text">Price: ${item.price}</p>
       <a href="#" id="card-btn" class="btn btn-primary">Add to Cart</a>
     </div>
   </div> `
@@ -291,14 +291,13 @@ renderall();
 
 
 
-
 // There I render only the following Items which user selected using "filter()" method
 
-let filtereditems = (btn)=>{
-    div.innerHTML = ''
-console.log(btn.innerHTML);
-let filtered = products.filter((item) =>{
-    return item.category === btn.innerHTML
+let filtereditems = (categories) => {
+console.log(categories);
+div.innerHTML = ' ';
+let filtered = products.filter(items =>{
+    return items.category === categories
 }).map((item) =>{
     div.innerHTML += `
     <div class="card bg-dark text-white" style="width: 18rem;">
