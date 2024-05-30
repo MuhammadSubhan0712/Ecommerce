@@ -5,28 +5,8 @@
   padding: 0;
   box-sizing: border-box;
 }
-#body {
-  font-family: "Comic Neue";
-  font-weight: bold;
-  font-style: normal;
-  font-size: 22px;
-  background: linear-gradient(to bottom, grey, goldenrod);
-}
 
-.card-img-top {
-  width: 50%;
-  height: 30vh;
-}
-.navbar {
-  background-color: rgb(163, 108, 7);
-}
-
-#span {
-  color: rgb(89, 43, 255);
-  background-color: rgb(193, 255, 94);
-  border-radius: 7px;
-  font-size: 30px;
-}
+/* Using tag to give style */
 button {
   background-color: rgb(163, 108, 7);
   color: #fff;
@@ -42,6 +22,44 @@ button:hover {
 }
 button:active {
   background-color: darkred;
+}
+
+
+/* Using Classes to give style */
+.card-img-top {
+  width: 50%;
+  height: 30vh;
+}
+.navbar {
+  background-color: rgb(163, 108, 7);
+}
+
+
+
+/* Using id to give style */
+
+#body {
+  font-family: "Comic Neue";
+  font-weight: bold;
+  font-style: normal;
+  font-size: 22px;
+  background: linear-gradient(to bottom, grey, goldenrod);
+}
+#span {
+  color: rgb(89, 43, 255);
+  background-color: rgb(193, 255, 94);
+  border-radius: 7px;
+  font-size: 30px;
+}
+#card{
+overflow: hidden;
+box-shadow: 3px 5px 5px rgba(255, 255, 255, 0.3);
+transition: 0.2s ease-in-out;
+}
+#card:hover{
+transition: 0.2s ease-in-out;
+box-shadow: 3px 5px 5px rgba(219, 217, 217, 0.3);
+
 }
 
 #card-btn {

@@ -269,12 +269,12 @@ let renderall = () => {
   // By applying Map() Method I am rendering the following items with their type using arrow function
   products.map((item) => {
     div.innerHTML += `
-    <div class="card bg-dark text-white" style="width: 18rem;">
+    <div id="card" class="card bg-dark text-white" style="width: 18rem;">
     <img src="${item.img}" class="card-img-top" alt="image">
     <div class="card-body">
       <h5 class="card-title">${item.brand} ${item.name}</h5>
       <h5 class="card-title"> ${item.category} </h5>
-      <p class="card-text">Price: ${item.price}</p>
+      <p class="card-text">Price: ${item.price}$</p>
       <a href="#" id="card-btn" class="btn btn-primary">Add to Cart</a>
     </div>
   </div> `;
@@ -294,7 +294,7 @@ let filtereditems = (categories) => {
     })
     .map((item) => {
       div.innerHTML += `
-    <div class="card bg-dark text-white" style="width: 18rem;">
+    <div id="card" class="card bg-dark text-white" style="width: 18rem;">
     <img src="${item.img}" class="card-img-top" alt="image">
     <div class="card-body">
       <h5 class="card-title">${item.brand} ${item.name}</h5>
